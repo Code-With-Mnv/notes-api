@@ -34,3 +34,15 @@ def create_note():
     db.session.commit()
 
     return jsonify({'message':"Note created successfully", 'id': new_note.id}), 201
+
+@note_routes_bp.route('/delete-note/<int:note_id>', methods=['DELETE'])
+def delete_note(note_id):
+    note = Note.query.get(note_id)
+
+    if not note:
+        return jsonify({'error': 'Note not found'}), 404
+    
+    db.session.delete(note)
+    db.session.commit()
+
+    return jsonify({'message': 'Note deleted successfully'}), 200
