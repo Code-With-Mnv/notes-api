@@ -1,0 +1,5 @@
+2025-06-25 01:51:55,457 INFO: App startup [in c:\Users\Manav Sonawane\Desktop\notes_api\app\__init__.py:37]
+2025-06-25 01:51:57,185 INFO: App startup [in c:\Users\Manav Sonawane\Desktop\notes_api\app\__init__.py:37]
+2025-06-25 01:52:01,696 INFO: Fetched 7 notes. [in c:\Users\Manav Sonawane\Desktop\notes_api\app\routes\note_routes.py:12]
+2025-06-25 01:52:34,023 INFO: Note created with ID 9 [in c:\Users\Manav Sonawane\Desktop\notes_api\app\routes\note_routes.py:33]
+2025-06-25 01:53:33,382 INFO: Deleted note with ID 8 [in c:\Users\Manav Sonawane\Desktop\notes_api\app\routes\note_routes.py:52]
