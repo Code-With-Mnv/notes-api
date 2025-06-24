@@ -4,6 +4,7 @@ from flask_migrate import Migrate
 from app.config import Config
 from dotenv import load_dotenv
 
+
 load_dotenv()
 
 db = SQLAlchemy()
@@ -15,5 +16,8 @@ def create_app():
 
     db.init_app(app)
     migrate.init_app(app, db)
+    
+    from app.routes.note_routes import note_routes_bp
+    app.register_blueprint(note_routes_bp)
 
     return app
